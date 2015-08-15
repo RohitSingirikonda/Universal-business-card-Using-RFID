@@ -1,0 +1,12 @@
+create database businesscard;
+use businesscard;
+create table issue_card(card_holder_name varchar(50),
+contact_no varchar(50),
+address varchar(50),
+card_no varchar(50),
+issue_date date,
+amount double);
+
+create table shopkeeper(shopkeeper_id varchar(50),shopkeeper_name varchar(50));
+
+create table payment(shopkeeper_id varchar(50),user_card_no varchar(50),amount double, payment_date date);
